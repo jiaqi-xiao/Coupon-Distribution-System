@@ -50,9 +50,9 @@ public class Constants {
     /**
      * <h2>Coupontemplate HBase Table</h2>
      * */
-    public class PassTemplateTable {
+    public class CouponTemplateTable {
 
-        /** Coupontemplate HBase 表名 */
+        /** Coupontemplate HBase table name */
         public static final String TABLE_NAME = "pb:coupontemplate";
 
         /** Basic information row family */
@@ -92,9 +92,9 @@ public class Constants {
     /**
      * <h2>Coupon HBase Table</h2>
      * */
-    public class PassTable {
+    public class CouponTable {
 
-        /** Pass HBase 表名 */
+        /** Coupon HBase 表名 */
         public static final String TABLE_NAME = "pb:coupon";
 
         /** information row family */
