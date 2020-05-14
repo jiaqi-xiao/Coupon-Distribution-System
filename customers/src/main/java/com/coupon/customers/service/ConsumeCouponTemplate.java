@@ -13,7 +13,6 @@ import org.springframework.stereotype.Component;
 
 /**
  * <h1>消费 Kafka 中的 CouponTemplate</h1>
- * Created by Qinyi.
  */
 @Slf4j
 @Component

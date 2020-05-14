@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 
 /**
  * <h1>User comment/h1>
- * Created by Qinyi.
  */
 @Data
 @NoArgsConstructor
