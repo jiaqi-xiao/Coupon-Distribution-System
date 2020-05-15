@@ -16,5 +16,5 @@ public class GetCouponTemplateRequest {
     private Long userId;
 
     /** CouponTemplate Object */
-    private CouponTemplate coupontemplate;
+    private CouponTemplate couponTemplate;
 }

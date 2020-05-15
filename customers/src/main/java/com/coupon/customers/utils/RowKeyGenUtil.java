@@ -2,6 +2,7 @@ package com.coupon.customers.utils;
 
 import com.coupon.customers.vo.CouponTemplate;
 import com.coupon.customers.vo.Feedback;
+import com.coupon.customers.vo.GetCouponTemplateRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.digest.DigestUtils;
 
@@ -23,6 +24,19 @@ public class RowKeyGenUtil {
         log.info("GenCouponTemplateRowKey: {}, {}", couponInfo, rowKey);
 
         return rowKey;
+    }
+
+    /**
+     * <h2>Generate RowKey based on the provided coupon request, which can only be used when getting coupons</h2>
+     * Coupon RowKey = reversed(userId) + inverse(timestamp) + CouponTemplate RowKey
+     * @param request {@link GetCouponTemplateRequest}
+     * @return String RowKey
+     * */
+    public static String genCouponRowKey(GetCouponTemplateRequest request) {
+
+        return new StringBuilder(String.valueOf(request.getUserId())).reverse().toString()
+                + (Long.MAX_VALUE - System.currentTimeMillis())
+                + genCouponTemplateRowKey(request.getCouponTemplate());
     }
 
 
