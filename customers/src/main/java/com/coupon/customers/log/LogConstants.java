@@ -23,7 +23,7 @@ public class LogConstants {
         public static final String INVENTORY_INFO = "InventoryInfo";
 
         /** User gain coupons */
-        public static final String GAIN_COUPON_TEMPLATE = "GainCouponTemplate";
+        public static final String GET_COUPON_TEMPLATE = "GetCouponTemplate";
 
         /** User create comment */
         public static final String CREATE_FEEDBACK = "CreateFeedback";
