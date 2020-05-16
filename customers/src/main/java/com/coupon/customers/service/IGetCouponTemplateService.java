@@ -12,5 +12,5 @@ public interface IGetCouponTemplateService {
      * @param request {@link GetCouponTemplateRequest}
      * @return {@link Response}
      * */
-    Response gainPassTemplate(GetCouponTemplateRequest request) throws Exception;
+    Response getCouponTemplate(GetCouponTemplateRequest request) throws Exception;
 }
