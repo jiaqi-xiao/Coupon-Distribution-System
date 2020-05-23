@@ -29,6 +29,10 @@ public class UserServiceTest {
                 new User.OtherInfo("123456", "Inner Ring Rd, Irvine, CA 92697")
         );
 
+        // {"data":{"baseInfo":{"age":10,"gender":"m","name":"Jesse"},
+        // "id":1353038,
+        // "otherInfo":{"address":"Inner Ring Rd, Irvine, CA 92697","phone":"123456"}},
+        // "errorCode":0,"errorMsg":""}
         System.out.println(JSON.toJSONString(userService.createUser(user)));
     }
 }

@@ -18,5 +18,5 @@ public class InventoryResponse {
     private Long userId;
 
     /** Coupon Template Information */
-    private List<CouponTemplateInfo> passTemplateInfos;
+    private List<CouponTemplateInfo> couponTemplateInfos;
 }

@@ -23,7 +23,7 @@ public class Constants {
     public class UserTable {
 
         /** User HBase table name */
-        public static final String TABLE_NAME = "pb:user";
+        public static final String TABLE_NAME = "cp:user";
 
         /** Basic information row family */
         public static final String FAMILY_B = "b";
@@ -53,7 +53,7 @@ public class Constants {
     public class CouponTemplateTable {
 
         /** Coupontemplate HBase table name */
-        public static final String TABLE_NAME = "pb:coupontemplate";
+        public static final String TABLE_NAME = "cp:coupontemplate";
 
         /** Basic information row family */
         public static final String FAMILY_B = "b";
@@ -95,7 +95,7 @@ public class Constants {
     public class CouponTable {
 
         /** Coupon HBase 表名 */
-        public static final String TABLE_NAME = "pb:coupon";
+        public static final String TABLE_NAME = "cp:coupon";
 
         /** information row family */
         public static final String FAMILY_I = "i";
@@ -122,7 +122,7 @@ public class Constants {
     public class Feedback {
 
         /** Feedback HBase table name */
-        public static final String TABLE_NAME = "pb:feedback";
+        public static final String TABLE_NAME = "cp:feedback";
 
         /** information row family*/
         public static final String FAMILY_I = "i";

@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 @RequestMapping("/passbook")
 public class CreateUserController {
 
-    /** 创建用户服务 */
+    /** Create User Service */
     private final IUserService userService;
 
     /** HttpServletRequest */
