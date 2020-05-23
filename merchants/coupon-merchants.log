@@ -8119,3 +8119,303 @@ Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo can
 2020-05-01 17:09:09.554  INFO 24884 --- [Thread-8] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
 2020-05-01 17:09:09.555  INFO 24884 --- [Thread-8] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
 2020-05-01 17:09:09.556  INFO 24884 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 22:38:38.545  INFO 25630 --- [main] c.coupon.merchants.MerchantsApplication  : Starting MerchantsApplication on jesse-OMEN with PID 25630 (/home/jesse/IdeaProjects/middleware/merchants/target/classes started by jesse in /home/jesse/IdeaProjects/middleware/merchants)
+2020-05-22 22:38:38.548  INFO 25630 --- [main] c.coupon.merchants.MerchantsApplication  : No active profile set, falling back to default profiles: default
+2020-05-22 22:38:38.582  INFO 25630 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3911c2a7: startup date [Fri May 22 22:38:38 PDT 2020]; root of context hierarchy
+2020-05-22 22:38:39.496  INFO 25630 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$264cb389] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 22:38:39.724  INFO 25630 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9527 (http)
+2020-05-22 22:38:39.731  INFO 25630 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2020-05-22 22:38:39.732  INFO 25630 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2020-05-22 22:38:39.786  INFO 25630 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-22 22:38:39.786  INFO 25630 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1206 ms
+2020-05-22 22:38:39.869  INFO 25630 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-05-22 22:38:39.872  INFO 25630 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-05-22 22:38:39.872  INFO 25630 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-05-22 22:38:39.873  INFO 25630 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-05-22 22:38:39.873  INFO 25630 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-05-22 22:38:40.244  INFO 25630 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-22 22:38:40.252  INFO 25630 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-22 22:38:40.285  INFO 25630 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-22 22:38:40.286  INFO 25630 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-22 22:38:40.287  INFO 25630 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-22 22:38:40.306  INFO 25630 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-22 22:38:40.353  INFO 25630 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-22 22:38:40.626  INFO 25630 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 22:38:41.085  INFO 25630 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3911c2a7: startup date [Fri May 22 22:38:38 PDT 2020]; root of context hierarchy
+2020-05-22 22:38:41.129  INFO 25630 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/merchants/create],methods=[POST]}" onto public com.coupon.merchants.vo.Response com.coupon.merchants.controller.MerchantsCtl.createMerchants(com.coupon.merchants.vo.CreateMerchantsRequest)
+2020-05-22 22:38:41.130  INFO 25630 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/merchants/{id}],methods=[GET]}" onto public com.coupon.merchants.vo.Response com.coupon.merchants.controller.MerchantsCtl.buildMerchantsInfo(java.lang.Integer)
+2020-05-22 22:38:41.130  INFO 25630 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/merchants/distribute],methods=[POST]}" onto public com.coupon.merchants.vo.Response com.coupon.merchants.controller.MerchantsCtl.distributeCouponTemplate(com.coupon.merchants.vo.couponTemplate)
+2020-05-22 22:38:41.132  INFO 25630 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-05-22 22:38:41.132  INFO 25630 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-05-22 22:38:41.156  INFO 25630 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 22:38:41.156  INFO 25630 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 22:38:41.182  INFO 25630 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-05-22 22:38:41.372  INFO 25630 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-05-22 22:38:41.378  INFO 25630 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-05-22 22:38:41.407  INFO 25630 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9527 (http)
+2020-05-22 22:38:41.411  INFO 25630 --- [main] c.coupon.merchants.MerchantsApplication  : Started MerchantsApplication in 3.111 seconds (JVM running for 3.554)
+2020-05-22 22:39:57.303  INFO 25630 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@3911c2a7: startup date [Fri May 22 22:38:38 PDT 2020]; root of context hierarchy
+2020-05-22 22:39:57.304  INFO 25630 --- [Thread-9] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-05-22 22:39:57.304  INFO 25630 --- [Thread-9] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-05-22 22:39:57.305  INFO 25630 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-05-22 22:39:57.305  INFO 25630 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 22:49:06.334  INFO 28013 --- [main] c.c.merchants.service.MerchantsServTest  : Starting MerchantsServTest on jesse-OMEN with PID 28013 (started by jesse in /home/jesse/IdeaProjects/middleware/merchants)
+2020-05-22 22:49:06.335  INFO 28013 --- [main] c.c.merchants.service.MerchantsServTest  : No active profile set, falling back to default profiles: default
+2020-05-22 22:49:06.357  INFO 28013 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@54a7079e: startup date [Fri May 22 22:49:06 PDT 2020]; root of context hierarchy
+2020-05-22 22:49:07.218  INFO 28013 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$a49c4d81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 22:49:07.880  INFO 28013 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-22 22:49:07.894  INFO 28013 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-22 22:49:07.946  INFO 28013 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-22 22:49:07.948  INFO 28013 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-22 22:49:07.949  INFO 28013 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-22 22:49:07.985  INFO 28013 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-22 22:49:08.081  INFO 28013 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-22 22:49:08.495  INFO 28013 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 22:49:09.050  INFO 28013 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-05-22 22:49:09.058  INFO 28013 --- [main] c.c.merchants.service.MerchantsServTest  : Started MerchantsServTest in 3.056 seconds (JVM running for 3.693)
+2020-05-22 22:49:09.116  INFO 28013 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-22 22:49:09.379  INFO 28013 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [127.0.0.1:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2020-05-22 22:49:09.408  INFO 28013 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [127.0.0.1:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = producer-1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2020-05-22 22:49:09.410  INFO 28013 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.0.1
+2020-05-22 22:49:09.410  INFO 28013 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : a7a17cdec9eaa6c5
+2020-05-22 22:49:09.542  INFO 28013 --- [main] c.c.m.service.impl.MerchantsServImpl     : DistributeCouponTemplates: {"background":2,"desc":"Description: Middleware","end":1591076949356,"hasToken":false,"id":3,"limit":10000,"start":1589348949355,"summary":"Summary: Middleware course","title":"Middleware discount-1"}
+2020-05-22 22:49:09.553  INFO 28013 --- [main] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@6c9f5c0d testClass = MerchantsServTest, testInstance = com.coupon.merchants.service.MerchantsServTest@42c0a16e, testMethod = testCreateMerchantServ@MerchantsServTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@de3a06f testClass = MerchantsServTest, locations = '{}', classes = '{class com.coupon.merchants.MerchantsApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@598067a5, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5f341870, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2d928643], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@11381415]; rollback [true]
+2020-05-22 22:49:09.567  INFO 28013 --- [main] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test context [DefaultTestContext@6c9f5c0d testClass = MerchantsServTest, testInstance = com.coupon.merchants.service.MerchantsServTest@42c0a16e, testMethod = testCreateMerchantServ@MerchantsServTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@de3a06f testClass = MerchantsServTest, locations = '{}', classes = '{class com.coupon.merchants.MerchantsApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@598067a5, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5f341870, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2d928643], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+2020-05-22 22:49:09.569  INFO 28013 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@54a7079e: startup date [Fri May 22 22:49:06 PDT 2020]; root of context hierarchy
+2020-05-22 22:49:09.571  INFO 28013 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-05-22 22:49:09.572  INFO 28013 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-05-22 22:49:09.572  INFO 28013 --- [Thread-3] o.a.k.clients.producer.KafkaProducer     : Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2020-05-22 22:49:09.575  INFO 28013 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 22:54:07.885  INFO 28649 --- [main] c.c.merchants.service.MerchantsServTest  : Starting MerchantsServTest on jesse-OMEN with PID 28649 (started by jesse in /home/jesse/IdeaProjects/middleware/merchants)
+2020-05-22 22:54:07.886  INFO 28649 --- [main] c.c.merchants.service.MerchantsServTest  : No active profile set, falling back to default profiles: default
+2020-05-22 22:54:07.910  INFO 28649 --- [main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@54a7079e: startup date [Fri May 22 22:54:07 PDT 2020]; root of context hierarchy
+2020-05-22 22:54:08.730  INFO 28649 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$fffd4bd5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-05-22 22:54:09.314  INFO 28649 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-05-22 22:54:09.326  INFO 28649 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-05-22 22:54:09.375  INFO 28649 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-05-22 22:54:09.376  INFO 28649 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-05-22 22:54:09.378  INFO 28649 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-05-22 22:54:09.405  INFO 28649 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-05-22 22:54:09.478  INFO 28649 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-05-22 22:54:09.842  INFO 28649 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-05-22 22:54:10.392  INFO 28649 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-05-22 22:54:10.400  INFO 28649 --- [main] c.c.merchants.service.MerchantsServTest  : Started MerchantsServTest in 2.836 seconds (JVM running for 3.454)
+2020-05-22 22:54:10.456  INFO 28649 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-05-22 22:54:10.693  INFO 28649 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [127.0.0.1:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = 
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2020-05-22 22:54:10.724  INFO 28649 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	metric.reporters = []
+	metadata.max.age.ms = 300000
+	reconnect.backoff.ms = 50
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	bootstrap.servers = [127.0.0.1:9092]
+	ssl.keystore.type = JKS
+	sasl.mechanism = GSSAPI
+	max.block.ms = 60000
+	interceptor.classes = null
+	ssl.truststore.password = null
+	client.id = producer-1
+	ssl.endpoint.identification.algorithm = null
+	request.timeout.ms = 30000
+	acks = 1
+	receive.buffer.bytes = 32768
+	ssl.truststore.type = JKS
+	retries = 0
+	ssl.truststore.location = null
+	ssl.keystore.password = null
+	send.buffer.bytes = 131072
+	compression.type = none
+	metadata.fetch.timeout.ms = 60000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	buffer.memory = 33554432
+	timeout.ms = 30000
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	ssl.trustmanager.algorithm = PKIX
+	block.on.buffer.full = false
+	ssl.key.password = null
+	sasl.kerberos.min.time.before.relogin = 60000
+	connections.max.idle.ms = 540000
+	max.in.flight.requests.per.connection = 5
+	metrics.num.samples = 2
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	batch.size = 16384
+	ssl.keystore.location = null
+	ssl.cipher.suites = null
+	security.protocol = PLAINTEXT
+	max.request.size = 1048576
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	ssl.keymanager.algorithm = SunX509
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	linger.ms = 0
+
+2020-05-22 22:54:10.726  INFO 28649 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.0.1
+2020-05-22 22:54:10.727  INFO 28649 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : a7a17cdec9eaa6c5
+2020-05-22 22:54:10.862  INFO 28649 --- [main] c.c.m.service.impl.MerchantsServImpl     : DistributeCouponTemplates: {"background":2,"desc":"Description: Middleware","end":1591077250672,"hasToken":true,"id":3,"limit":10000,"start":1589349250671,"summary":"Summary: Middleware course","title":"Middleware discount-2"}
+2020-05-22 22:54:10.871  INFO 28649 --- [main] o.s.t.c.transaction.TransactionContext   : Began transaction (1) for test context [DefaultTestContext@6c9f5c0d testClass = MerchantsServTest, testInstance = com.coupon.merchants.service.MerchantsServTest@543fe698, testMethod = testCreateMerchantServ@MerchantsServTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@de3a06f testClass = MerchantsServTest, locations = '{}', classes = '{class com.coupon.merchants.MerchantsApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@598067a5, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5f341870, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2d928643], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]]; transaction manager [org.springframework.orm.jpa.JpaTransactionManager@800d065]; rollback [true]
+2020-05-22 22:54:10.883  INFO 28649 --- [main] o.s.t.c.transaction.TransactionContext   : Rolled back transaction for test context [DefaultTestContext@6c9f5c0d testClass = MerchantsServTest, testInstance = com.coupon.merchants.service.MerchantsServTest@543fe698, testMethod = testCreateMerchantServ@MerchantsServTest, testException = [null], mergedContextConfiguration = [MergedContextConfiguration@de3a06f testClass = MerchantsServTest, locations = '{}', classes = '{class com.coupon.merchants.MerchantsApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.SpringBootTestContextCustomizer@598067a5, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@5f341870, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2d928643], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]].
+2020-05-22 22:54:10.885  INFO 28649 --- [Thread-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@54a7079e: startup date [Fri May 22 22:54:07 PDT 2020]; root of context hierarchy
+2020-05-22 22:54:10.886  INFO 28649 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-05-22 22:54:10.886  INFO 28649 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-05-22 22:54:10.887  INFO 28649 --- [Thread-3] o.a.k.clients.producer.KafkaProducer     : Closing the Kafka producer with timeoutMillis = 9223372036854775807 ms.
+2020-05-22 22:54:10.889  INFO 28649 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'

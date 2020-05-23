@@ -12,7 +12,7 @@ import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Component;
 
 /**
- * <h1>消费 Kafka 中的 CouponTemplate</h1>
+ * <h1>consume CouponTemplate in kafka</h1>
  */
 @Slf4j
 @Component

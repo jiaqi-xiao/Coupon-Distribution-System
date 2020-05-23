@@ -59,11 +59,11 @@ public class MerchantsServTest {
 
         couponTemplate coupon = new couponTemplate();
         coupon.setId(3);
-        coupon.setTitle("Middleware discount");
+        coupon.setTitle("Middleware discount-2");
         coupon.setSummary("Summary: Middleware course");
         coupon.setDesc("Description: Middleware");
         coupon.setLimit(10000L);
-        coupon.setHasToken(false);
+        coupon.setHasToken(true);
         coupon.setBackground(2);
         coupon.setStart(DateUtils.addDays(new Date(), -10));
         coupon.setEnd(DateUtils.addDays(new Date(), 10));
