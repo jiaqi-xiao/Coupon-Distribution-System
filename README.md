@@ -10,3 +10,14 @@ This is a Coupon Distribution Platform for both consumers and merchants. Custome
 ## Application Structure
 <img src="./asset/application_structure.png">
 
+## [Technology Structure](https://https://github.com/jiaqi-xiao/Coupon-Distribution-System/blob/master/doc/Technology_Structure.md)
+
+- Cache Design
+- Utility
+- Log
+- Exception
+- Table Structure
+
+## Merchant Subsystem
+
+## Customer Subsystem

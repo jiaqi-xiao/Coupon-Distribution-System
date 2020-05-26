@@ -25,6 +25,5 @@ server:
 
 logging:
   level: debug
-  file:
-    name: coupon-customer.log
+  file: coupon-customer.log
 
