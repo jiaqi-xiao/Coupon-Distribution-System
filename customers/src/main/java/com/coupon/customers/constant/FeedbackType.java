@@ -5,7 +5,7 @@ package com.coupon.customers.constant;
  */
 public enum FeedbackType {
 
-    PASS("coupon", "Comments on coupons"),
+    COUPON("coupon", "Comments on coupons"),
     APP("app", "Comments on app");
 
     /** Comment type code */
