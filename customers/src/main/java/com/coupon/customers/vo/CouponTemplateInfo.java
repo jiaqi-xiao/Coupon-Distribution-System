@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class CouponTemplateInfo extends CouponTemplate{
+public class CouponTemplateInfo {
     /** Coupon Template*/
     private CouponTemplate couponTemplate;
 
