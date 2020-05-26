@@ -15,7 +15,7 @@ public class Constants {
     public static final String USED_TOKEN_SUFFIX = "_";
 
     /** total number of users redis key */
-    public static final String USE_COUNT_REDIS_KEY = "imooc-user-count";
+    public static final String USE_COUNT_REDIS_KEY = "total-user-count";
 
     /**
      * <h2>User HBase Table</h2>

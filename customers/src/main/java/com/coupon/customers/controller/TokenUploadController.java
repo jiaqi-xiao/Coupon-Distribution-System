@@ -36,7 +36,7 @@ public class TokenUploadController {
     public TokenUploadController(StringRedisTemplate redisTemplate) {
         this.redisTemplate = redisTemplate;
     }
-
+    // test merchant_id: 3; token_id: fb475cdf36b3c4a26b98ec016e2720f8
     @GetMapping("/upload")
     public String upload() {
         return "upload";
