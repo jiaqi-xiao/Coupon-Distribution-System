@@ -55,15 +55,15 @@ public class MerchantsServTest {
      * "start":1587510046938,"summary":"Summary: Middleware course","title":"Middleware discount"}
      */
     @Test
-    public void testDropCouponTemplate() {
+    public void testDistributeCouponTemplate() {
 
         couponTemplate coupon = new couponTemplate();
         coupon.setId(3);
-        coupon.setTitle("Middleware discount-2");
+        coupon.setTitle("Middleware discount-4");
         coupon.setSummary("Summary: Middleware course");
         coupon.setDesc("Description: Middleware");
         coupon.setLimit(10000L);
-        coupon.setHasToken(true);
+        coupon.setHasToken(false);
         coupon.setBackground(2);
         coupon.setStart(DateUtils.addDays(new Date(), -10));
         coupon.setEnd(DateUtils.addDays(new Date(), 10));

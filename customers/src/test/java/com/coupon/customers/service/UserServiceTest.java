@@ -23,14 +23,14 @@ public class UserServiceTest {
 
         User user = new User();
         user.setBaseInfo(
-                new User.BaseInfo("Jesse", 10, "m")
+                new User.BaseInfo("JesseX", 20, "m")
         );
         user.setOtherInfo(
                 new User.OtherInfo("123456", "Inner Ring Rd, Irvine, CA 92697")
         );
 
-        // {"data":{"baseInfo":{"age":10,"gender":"m","name":"Jesse"},
-        // "id":1353038,
+        // {"data":{"baseInfo":{"age":20,"gender":"m","name":"JesseX"},
+        // "id":119175,
         // "otherInfo":{"address":"Inner Ring Rd, Irvine, CA 92697","phone":"123456"}},
         // "errorCode":0,"errorMsg":""}
         System.out.println(JSON.toJSONString(userService.createUser(user)));
