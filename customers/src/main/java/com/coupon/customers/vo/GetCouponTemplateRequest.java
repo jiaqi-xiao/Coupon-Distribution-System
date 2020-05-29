@@ -5,7 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * <h1>用户领取优惠券的请求对象</h1>
+ * <h1>User get coupon request</h1>
  */
 @Data
 @NoArgsConstructor
