@@ -20,4 +20,31 @@ This is a Coupon Distribution Platform for both consumers and merchants. Custome
 
 ## Merchant Subsystem
 
+### Function
+
+- Create Merchant
+- Distribute Coupon
+
+### Package Structure
+
+- constant -- constants definition
+- security -- interceptor
+- entity -- Merchant Entity Class
+- dao -- Merchant Data Access Object Interface
+- vo -- Value Object
+- service -- Merchant service interface and implementation 
+
 ## Customer Subsystem
+
+### Function
+
+- User - Coupon Function
+  - User get coupon
+  - User use coupon
+  - Get user's usable coupons
+  - Get user's used coupons
+  - Get user's all coupons
+- Get Coupon Inventory
+- Feedback Function
+
+### Package Structure
