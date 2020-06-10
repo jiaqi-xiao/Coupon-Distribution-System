@@ -8,7 +8,7 @@ This is a Coupon Distribution Platform for both consumers and merchants. Custome
 - Cache：Redis
 - Framework：SpringBoot
 ## Application Structure
-<img src="./asset/application_structure.png">
+<img src="./asset/application_structure.jpg">
 
 ## [Technology Structure](https://github.com/jiaqi-xiao/Coupon-Distribution-System/blob/master/doc/Technology_Structure.md)
 
