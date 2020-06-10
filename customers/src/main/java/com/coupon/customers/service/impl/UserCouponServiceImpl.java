@@ -166,7 +166,7 @@ public class UserCouponServiceImpl implements IUserCouponService {
     }
 
     /**
-     * <h2>通过获取的 Coupones 对象构造 Map</h2>
+     * <h2>Construct a Map from Coupon object</h2>
      * @param coupons {@link Coupon}
      * @return Map {@link CouponTemplate}
      * */

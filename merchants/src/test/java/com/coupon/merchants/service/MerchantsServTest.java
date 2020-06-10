@@ -58,7 +58,7 @@ public class MerchantsServTest {
     public void testDistributeCouponTemplate() {
 
         couponTemplate coupon = new couponTemplate();
-        coupon.setId(3);
+        coupon.setId(5);
         coupon.setTitle("Middleware discount-4");
         coupon.setSummary("Summary: Middleware course");
         coupon.setDesc("Description: Middleware");
