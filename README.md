@@ -47,4 +47,3 @@ This is a Coupon Distribution Platform for both consumers and merchants. Custome
 - Get Coupon Inventory
 - Feedback Function
 
-### Package Structure
